@@ -13,5 +13,3 @@ loop do
   puts "Status: #{res.code}"
   status_count[res.code] = status_count.key?(res.code) ?  status_count[res.code] + 1 : 1
 end
-
-

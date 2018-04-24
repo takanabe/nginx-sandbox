@@ -19,6 +19,7 @@ loop do
     puts "#{Time.now } #{res['X-SANDBOX-ENV']} app,  Status: #{res.code}"
     status_count[res.code] = status_count.key?(res.code) ?  status_count[res.code] + 1 : 1
   rescue Exception => msg
-    puts "error msg: #{msg}"
+    #puts "error msg: #{msg}"
+    puts "Switch Blue/Green app"
   end
 end
